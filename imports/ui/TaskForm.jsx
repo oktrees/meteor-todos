@@ -11,7 +11,8 @@ export const TaskForm = () => {
 
     TasksCollection.insert({
       text: text.trim(),
-      createdAt: new Date()
+      createdAt: new Date(),
+      userId: user._id
     });
 
     setText("");
